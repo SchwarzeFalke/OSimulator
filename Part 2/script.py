@@ -1,29 +1,22 @@
 # @Author: schwarze_falke
 # @Date:   2019-02-05T01:42:08-06:00
 # @Last modified by:   schwarze_falke
-# @Last modified time: 2019-02-07T17:01:53-06:00
+# @Last modified time: 2019-02-06T00:22:52-06:00
 
-import sys
-import os
-import constant
+import sys, os, constant, time
 from batch import Batch
 from task import Task
 
-TOTAL_BATCH = []  # Estructura principal para almacenar los lotes
-ID_REGISTER = []  # Estructura de datos para almacenar los ID
+TOTAL_BATCH = [] # Estructura principal para almacenar los lotes
+ID_REGISTER = [] # Estructura de datos para almacenar los ID y hacerlos irrepetibles
 
-# Función para imprimir en pantalla acorde a las coordenadas
-# (x, y) parametrizadas
-
-
+# Función para imprimir en pantalla acorde a las coordenadas (x, y) parametrizadas
 def print_there(x, y, text):
     sys.stdout.write("\x1b7\x1b[%d;%df%s\x1b8" % (x, y, text))
     sys.stdout.flush()
 
 # Función para capturar los procesos/tareas de forma secuencial iterativa
-
-
-def capture(amount):  # @amount es el parámetro de cantidad de procesos a capturar
+def capture(amount):            # @amount es el parámetro de cantidad de procesos a capturar
     count = 0                   # @count lleva la cuenta de lotes acumulados/capturados
     idCount = 1                 # @idCount es una variable auxiliar para asignarle un ID consecutivo a los lotes
     while count < amount:
@@ -74,17 +67,14 @@ def capture(amount):  # @amount es el parámetro de cantidad de procesos a captu
             while True:
                 op = input("Ingresa el operando (+, -, *, /, %): ")
                 if op == '+' or op == '-' or op == '*' or op == '/' or op == '%':
-                    break
+                    break;
                 else:
                     print("Ha ingresado un caracter invalido!")
 
             while True:
                 try:
                     op2 = int(input("Ingrese un numero entero: "))
-                    if (op == '/' or op == '%') and op2 == 0:
-                        print("No se puede dividir entre 0!")
-                    else:
-                        break
+                    break
                 except:
                      print("No es un numero valido!")
 

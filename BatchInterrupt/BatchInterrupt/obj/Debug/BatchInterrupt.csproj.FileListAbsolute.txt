@@ -1,0 +1,10 @@
+C:\dev\BatchInterrupt\BatchInterrupt\bin\Debug\BatchInterrupt.exe.config
+C:\dev\BatchInterrupt\BatchInterrupt\bin\Debug\BatchInterrupt.exe
+C:\dev\BatchInterrupt\BatchInterrupt\bin\Debug\BatchInterrupt.pdb
+C:\dev\BatchInterrupt\BatchInterrupt\obj\Debug\BatchInterrupt.csprojAssemblyReference.cache
+C:\dev\BatchInterrupt\BatchInterrupt\obj\Debug\BatchInterrupt.Form1.resources
+C:\dev\BatchInterrupt\BatchInterrupt\obj\Debug\BatchInterrupt.Properties.Resources.resources
+C:\dev\BatchInterrupt\BatchInterrupt\obj\Debug\BatchInterrupt.csproj.GenerateResource.cache
+C:\dev\BatchInterrupt\BatchInterrupt\obj\Debug\BatchInterrupt.csproj.CoreCompileInputs.cache
+C:\dev\BatchInterrupt\BatchInterrupt\obj\Debug\BatchInterrupt.exe
+C:\dev\BatchInterrupt\BatchInterrupt\obj\Debug\BatchInterrupt.pdb

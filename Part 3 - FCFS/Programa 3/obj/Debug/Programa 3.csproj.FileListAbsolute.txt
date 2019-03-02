@@ -1,0 +1,21 @@
+C:\Users\Carlo\Documents\CUCEI\6°\Seminario de Sistemas Operativos\Actividad 6 - Programa 3\Programa 3\Programa 3\bin\Debug\Programa 3.exe.config
+C:\Users\Carlo\Documents\CUCEI\6°\Seminario de Sistemas Operativos\Actividad 6 - Programa 3\Programa 3\Programa 3\bin\Debug\Programa 3.exe
+C:\Users\Carlo\Documents\CUCEI\6°\Seminario de Sistemas Operativos\Actividad 6 - Programa 3\Programa 3\Programa 3\bin\Debug\Programa 3.pdb
+C:\Users\Carlo\Documents\CUCEI\6°\Seminario de Sistemas Operativos\Actividad 6 - Programa 3\Programa 3\Programa 3\obj\Debug\Programa 3.csprojAssemblyReference.cache
+C:\Users\Carlo\Documents\CUCEI\6°\Seminario de Sistemas Operativos\Actividad 6 - Programa 3\Programa 3\Programa 3\obj\Debug\Programa_3.MainForm.resources
+C:\Users\Carlo\Documents\CUCEI\6°\Seminario de Sistemas Operativos\Actividad 6 - Programa 3\Programa 3\Programa 3\obj\Debug\Programa_3.Procesos.resources
+C:\Users\Carlo\Documents\CUCEI\6°\Seminario de Sistemas Operativos\Actividad 6 - Programa 3\Programa 3\Programa 3\obj\Debug\Programa_3.Properties.Resources.resources
+C:\Users\Carlo\Documents\CUCEI\6°\Seminario de Sistemas Operativos\Actividad 6 - Programa 3\Programa 3\Programa 3\obj\Debug\Programa 3.csproj.GenerateResource.cache
+C:\Users\Carlo\Documents\CUCEI\6°\Seminario de Sistemas Operativos\Actividad 6 - Programa 3\Programa 3\Programa 3\obj\Debug\Programa 3.csproj.CoreCompileInputs.cache
+C:\Users\Carlo\Documents\CUCEI\6°\Seminario de Sistemas Operativos\Actividad 6 - Programa 3\Programa 3\Programa 3\obj\Debug\Programa 3.exe
+C:\Users\Carlo\Documents\CUCEI\6°\Seminario de Sistemas Operativos\Actividad 6 - Programa 3\Programa 3\Programa 3\obj\Debug\Programa 3.pdb
+C:\Users\black\OneDrive\Escritorio\Programa 3\Programa 3\bin\Debug\Programa 3.exe.config
+C:\Users\black\OneDrive\Escritorio\Programa 3\Programa 3\bin\Debug\Programa 3.exe
+C:\Users\black\OneDrive\Escritorio\Programa 3\Programa 3\bin\Debug\Programa 3.pdb
+C:\Users\black\OneDrive\Escritorio\Programa 3\Programa 3\obj\Debug\Programa 3.csprojAssemblyReference.cache
+C:\Users\black\OneDrive\Escritorio\Programa 3\Programa 3\obj\Debug\Programa_3.MainForm.resources
+C:\Users\black\OneDrive\Escritorio\Programa 3\Programa 3\obj\Debug\Programa_3.Properties.Resources.resources
+C:\Users\black\OneDrive\Escritorio\Programa 3\Programa 3\obj\Debug\Programa 3.csproj.GenerateResource.cache
+C:\Users\black\OneDrive\Escritorio\Programa 3\Programa 3\obj\Debug\Programa 3.csproj.CoreCompileInputs.cache
+C:\Users\black\OneDrive\Escritorio\Programa 3\Programa 3\obj\Debug\Programa 3.exe
+C:\Users\black\OneDrive\Escritorio\Programa 3\Programa 3\obj\Debug\Programa 3.pdb

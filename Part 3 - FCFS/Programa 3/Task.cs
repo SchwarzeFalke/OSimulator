@@ -10,17 +10,22 @@ namespace Programa_3
     {
         private int id;
         private int tme;
+        private int tiempoAtendido;
         private int tiempoTranscurrido;
         private int tiempoLlegada;
         private int tiempoFinalizacion;
         private int tiempoRespuesta;
+        private int tiempoRespuesta2;
         private int tiempoBloqueadoTranscurrido;
         private int tiempoBloqueadoTotal;
 
         private String operacion;
+        private string status = "Nuevo";
+        
 
         public Task(int id, String operacion, int tme)
         {
+            this.tiempoAtendido = 0;
             this.id = id;
             this.operacion = operacion;
             this.tme = tme;
@@ -76,6 +81,12 @@ namespace Programa_3
             get { return this.tme - this.tiempoTranscurrido; }
         }
 
+        public int TiempoAtendido
+        {
+            get { return this.tiempoAtendido; }
+            set { this.tiempoAtendido += value; }
+        }
+
         public int TiempoLlegada
         {
             get { return this.tiempoLlegada; }
@@ -96,8 +107,15 @@ namespace Programa_3
                 if (this.tiempoRespuesta == -1)
                 {
                     this.tiempoRespuesta = value - this.tiempoLlegada;
+                    this.tiempoAtendido += this.tiempoRespuesta;
                 }
             }
+        }
+
+        public int TiempoRespuesta2
+        {
+            get { return this.tiempoRespuesta2; }
+            set { this.tiempoRespuesta2 += value; }
         }
 
         public int TiempoEspera
@@ -121,9 +139,14 @@ namespace Programa_3
             set { this.tiempoBloqueadoTranscurrido = value; }
         }
 
+        public string Estado
+        {
+            get { return this.status; }
+        }
+
         public bool Increment()
         {
-            if (this.tiempoTranscurrido < tme - 1)
+            if (this.tiempoTranscurrido <= tme - 1)
             {
                 this.tiempoTranscurrido++;
                 return true;
@@ -219,31 +242,35 @@ namespace Programa_3
 
         public object[] toFinishedObject()
         {
-            object[] values = new object[9];
+            object[] values = new object[3];
             values[0] = this.id;
             values[1] = this.operacion;
             values[2] = Resultado().ToString();
+            /*
             values[3] = this.tiempoLlegada;
             values[4] = this.tiempoFinalizacion;
             values[5] = this.TiempoRetorno;
             values[6] = this.tiempoRespuesta;
             values[7] = this.TiempoEspera;
             values[8] = this.TiempoServicio;
+            */
             return values;
         }
 
         public object[] toErrorObject()
         {
-            object[] values = new object[9];
+            object[] values = new object[3];
             values[0] = this.id;
             values[1] = this.operacion;
             values[2] = "Error";
+            /*
             values[3] = this.tiempoLlegada;
             values[4] = this.tiempoFinalizacion;
             values[5] = this.TiempoRetorno;
             values[6] = this.tiempoRespuesta;
             values[7] = this.TiempoEspera;
             values[8] = this.TiempoServicio;
+            */
             return values;
         }
 
@@ -254,5 +281,11 @@ namespace Programa_3
             values[1] = this.tiempoBloqueadoTranscurrido;
             return values;
         }
+
+        public void SetFinished() { this.status = "Terminado"; }
+        public void SetError() { this.status = "Terminado por error"; }
+        public void SetReady() { this.status = "Listo"; }
+        public void SetExec() { this.status = "En ejecución"; }
+        public void SetBlocked() { this.status = "Bloqueado"; }
     }
 }

@@ -19,3 +19,13 @@ C:\Users\black\OneDrive\Escritorio\Programa 3\Programa 3\obj\Debug\Programa 3.cs
 C:\Users\black\OneDrive\Escritorio\Programa 3\Programa 3\obj\Debug\Programa 3.csproj.CoreCompileInputs.cache
 C:\Users\black\OneDrive\Escritorio\Programa 3\Programa 3\obj\Debug\Programa 3.exe
 C:\Users\black\OneDrive\Escritorio\Programa 3\Programa 3\obj\Debug\Programa 3.pdb
+C:\dev\OSimulator\Part 3 - FCFS\Programa 3\bin\Debug\Programa 3.exe.config
+C:\dev\OSimulator\Part 3 - FCFS\Programa 3\bin\Debug\Programa 3.exe
+C:\dev\OSimulator\Part 3 - FCFS\Programa 3\bin\Debug\Programa 3.pdb
+C:\dev\OSimulator\Part 3 - FCFS\Programa 3\obj\Debug\Programa 3.csprojAssemblyReference.cache
+C:\dev\OSimulator\Part 3 - FCFS\Programa 3\obj\Debug\Programa_3.MainForm.resources
+C:\dev\OSimulator\Part 3 - FCFS\Programa 3\obj\Debug\Programa_3.Properties.Resources.resources
+C:\dev\OSimulator\Part 3 - FCFS\Programa 3\obj\Debug\Programa 3.csproj.GenerateResource.cache
+C:\dev\OSimulator\Part 3 - FCFS\Programa 3\obj\Debug\Programa 3.csproj.CoreCompileInputs.cache
+C:\dev\OSimulator\Part 3 - FCFS\Programa 3\obj\Debug\Programa 3.exe
+C:\dev\OSimulator\Part 3 - FCFS\Programa 3\obj\Debug\Programa 3.pdb

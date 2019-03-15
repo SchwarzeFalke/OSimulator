@@ -45,6 +45,8 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.amountProc = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
+            this.procTable = new System.Windows.Forms.DataGridView();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.readyProc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.finishedProc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.execProc)).BeginInit();
@@ -54,6 +56,8 @@
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.amountProc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.procTable)).BeginInit();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // addProc
@@ -77,7 +81,7 @@
             this.readyProc.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.readyProc.Location = new System.Drawing.Point(6, 19);
             this.readyProc.Name = "readyProc";
-            this.readyProc.Size = new System.Drawing.Size(551, 123);
+            this.readyProc.Size = new System.Drawing.Size(318, 123);
             this.readyProc.TabIndex = 3;
             // 
             // finishedProc
@@ -90,18 +94,18 @@
             this.finishedProc.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.finishedProc.Location = new System.Drawing.Point(6, 19);
             this.finishedProc.Name = "finishedProc";
-            this.finishedProc.Size = new System.Drawing.Size(552, 141);
+            this.finishedProc.Size = new System.Drawing.Size(318, 141);
             this.finishedProc.TabIndex = 4;
             // 
             // clockLabel
             // 
             this.clockLabel.AutoSize = true;
             this.clockLabel.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clockLabel.Location = new System.Drawing.Point(714, 28);
+            this.clockLabel.Location = new System.Drawing.Point(217, 25);
             this.clockLabel.Name = "clockLabel";
-            this.clockLabel.Size = new System.Drawing.Size(65, 22);
+            this.clockLabel.Size = new System.Drawing.Size(98, 22);
             this.clockLabel.TabIndex = 6;
-            this.clockLabel.Text = "00:00";
+            this.clockLabel.Text = "00:00:00";
             this.clockLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // execProc
@@ -114,7 +118,7 @@
             this.execProc.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.execProc.Location = new System.Drawing.Point(6, 17);
             this.execProc.Name = "execProc";
-            this.execProc.Size = new System.Drawing.Size(552, 56);
+            this.execProc.Size = new System.Drawing.Size(318, 62);
             this.execProc.TabIndex = 8;
             // 
             // start
@@ -170,9 +174,9 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.readyProc);
-            this.groupBox1.Location = new System.Drawing.Point(215, 72);
+            this.groupBox1.Location = new System.Drawing.Point(215, 51);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(563, 153);
+            this.groupBox1.Size = new System.Drawing.Size(333, 153);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Procesos Listos";
@@ -180,9 +184,9 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.execProc);
-            this.groupBox2.Location = new System.Drawing.Point(215, 236);
+            this.groupBox2.Location = new System.Drawing.Point(215, 228);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(564, 79);
+            this.groupBox2.Size = new System.Drawing.Size(333, 85);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Proceso en Ejecución";
@@ -192,7 +196,7 @@
             this.groupBox3.Controls.Add(this.finishedProc);
             this.groupBox3.Location = new System.Drawing.Point(215, 337);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(564, 169);
+            this.groupBox3.Size = new System.Drawing.Size(333, 169);
             this.groupBox3.TabIndex = 17;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Procesos Terminados";
@@ -234,11 +238,37 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "Número de Procesos:";
             // 
+            // procTable
+            // 
+            this.procTable.AllowUserToAddRows = false;
+            this.procTable.AllowUserToDeleteRows = false;
+            this.procTable.AllowUserToResizeColumns = false;
+            this.procTable.AllowUserToResizeRows = false;
+            this.procTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.procTable.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.procTable.Location = new System.Drawing.Point(6, 19);
+            this.procTable.Name = "procTable";
+            this.procTable.Size = new System.Drawing.Size(222, 427);
+            this.procTable.TabIndex = 21;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.procTable);
+            this.groupBox5.Location = new System.Drawing.Point(564, 51);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(235, 455);
+            this.groupBox5.TabIndex = 22;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Tabla de Procesos";
+            this.groupBox5.Visible = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(787, 509);
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.ClientSize = new System.Drawing.Size(563, 509);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.amountProc);
             this.Controls.Add(this.groupBox4);
@@ -251,6 +281,8 @@
             this.Controls.Add(this.clockLabel);
             this.Controls.Add(this.addProc);
             this.KeyPreview = true;
+            this.MaximumSize = new System.Drawing.Size(821, 548);
+            this.MinimumSize = new System.Drawing.Size(579, 548);
             this.Name = "MainForm";
             this.Text = "OSimulator";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyDown);
@@ -263,6 +295,8 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.amountProc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.procTable)).EndInit();
+            this.groupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,6 +320,8 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.NumericUpDown amountProc;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView procTable;
+        private System.Windows.Forms.GroupBox groupBox5;
     }
 }
 
